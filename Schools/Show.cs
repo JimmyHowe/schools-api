@@ -30,7 +30,7 @@ namespace SkillsDevelopmentScotland.Functions.Schools
 
             log.LogInformation(schoolEntity.ToString());
 
-            return new OkObjectResult("Yo");
+            return new OkObjectResult(schoolEntity);
         }
     }
 }

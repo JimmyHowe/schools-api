@@ -12,9 +12,11 @@
 				"header": [],
 				"url": {
 					"raw": "http://localhost:7071/api/schools",
+					"protocol": "http",
 					"host": [
-						"http://localhost:7071"
+						"localhost"
 					],
+					"port": "7071",
 					"path": [
 						"api",
 						"schools"
@@ -28,11 +30,22 @@
 			"request": {
 				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"level\": \"Secondary School\",\n    \"name\": \"Cleveden Secondary School\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
 					"raw": "http://localhost:7071/api/schools/create",
+					"protocol": "http",
 					"host": [
-						"http://localhost:7071"
+						"localhost"
 					],
+					"port": "7071",
 					"path": [
 						"api",
 						"schools",
@@ -48,13 +61,16 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:7071/api/schools/",
+					"raw": "http://localhost:7071/api/schools/secondary-school-cleveden-school",
+					"protocol": "http",
 					"host": [
-						"http://localhost:7071"
+						"localhost"
 					],
+					"port": "7071",
 					"path": [
 						"api",
-						"schools"
+						"schools",
+						"secondary-school-cleveden-school"
 					]
 				}
 			},
@@ -65,15 +81,26 @@
 			"request": {
 				"method": "PUT",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"level\": \"Secondary School\",\n    \"name\": \"Cleveden School\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "http://localhost:7071/api/schools/some-name",
+					"raw": "http://localhost:7071/api/schools/secondary-school-cleveden-school",
+					"protocol": "http",
 					"host": [
-						"http://localhost:7071"
+						"localhost"
 					],
+					"port": "7071",
 					"path": [
 						"api",
 						"schools",
-						"some-name"
+						"secondary-school-cleveden-school"
 					]
 				}
 			},
@@ -84,15 +111,21 @@
 			"request": {
 				"method": "DELETE",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"url": {
-					"raw": "http://localhost:7071/api/schools/some-name",
+					"raw": "http://localhost:7071/api/schools/secondary-school-cleveden-school",
+					"protocol": "http",
 					"host": [
-						"http://localhost:7071"
+						"localhost"
 					],
+					"port": "7071",
 					"path": [
 						"api",
 						"schools",
-						"some-name"
+						"secondary-school-cleveden-school"
 					]
 				}
 			},
