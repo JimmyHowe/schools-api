@@ -23,7 +23,7 @@ namespace SkillsDevelopmentScotland.Functions.Schools
         {
             log.LogInformation("Index");
 
-            SchoolRepository schoolRepository = new TableStorageSchoolRepository();
+            SchoolRepository schoolRepository = RepositoryFactory.buildSchoolRepository();
 
             return new OkObjectResult(await schoolRepository.GetAll());
         }

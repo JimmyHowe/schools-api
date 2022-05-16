@@ -1,5 +1,3 @@
-
-
 using System;
 
 namespace SkillsDevelopmentScotland.Functions.Schools {
