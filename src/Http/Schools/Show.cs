@@ -22,7 +22,7 @@ namespace SkillsDevelopmentScotland.Functions.Schools
             string id,
             ILogger log)
         {
-            log.LogInformation($"Show School: {id}");
+            log.LogInformation($"Showing School [{id}]");
 
             SchoolRepository schoolRepository = RepositoryFactory.buildSchoolRepository();
 

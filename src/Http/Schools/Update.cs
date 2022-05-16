@@ -18,7 +18,7 @@ namespace SkillsDevelopmentScotland.Functions.Schools
             string id,
             ILogger log)
         {
-            log.LogInformation("UPDATE.");
+            log.LogInformation($"Updating School [{id}]...");
 
             SchoolRepository schoolRepository = RepositoryFactory.buildSchoolRepository();
 
