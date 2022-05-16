@@ -24,7 +24,7 @@ namespace SkillsDevelopmentScotland.Functions.Schools
             [HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = "schools/create")] HttpRequest request,
             ILogger log)
         {
-            log.LogInformation("Create Project");
+            log.LogInformation("Creating School...");
 
             Passed passed = await FunHelpers.getPostDataAsync<Passed>(request);
 

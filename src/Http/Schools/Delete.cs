@@ -19,7 +19,7 @@ namespace SkillsDevelopmentScotland.Functions.Schools
             string id,
             ILogger log)
         {
-            log.LogInformation($"Delete {id}");
+            log.LogInformation($"Deleting school [{id}]...");
 
             bool worked = await RepositoryFactory.buildSchoolRepository().Delete(id);
 

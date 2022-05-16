@@ -21,7 +21,7 @@ namespace SkillsDevelopmentScotland.Functions.Schools
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "schools")] HttpRequest request,
             ILogger log)
         {
-            log.LogInformation("Index");
+            log.LogInformation("Indexing Schools...");
 
             SchoolRepository schoolRepository = RepositoryFactory.buildSchoolRepository();
 
