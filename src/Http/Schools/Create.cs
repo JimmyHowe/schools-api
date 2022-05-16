@@ -26,9 +26,7 @@ namespace SkillsDevelopmentScotland.Functions.Schools
         {
             log.LogInformation("Create Project");
 
-            dynamic content = await new StreamReader(request.Body).ReadToEndAsync();
-
-            Passed passed = JsonConvert.DeserializeObject<Passed>(content);
+            Passed passed = await FunHelpers.getPostDataAsync<Passed>(request);
 
             bool worked = await RepositoryFactory.buildSchoolRepository().Save(new SchoolEntity(passed.level, passed.name));
 

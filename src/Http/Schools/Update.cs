@@ -22,9 +22,9 @@ namespace SkillsDevelopmentScotland.Functions.Schools
 
             SchoolRepository schoolRepository = RepositoryFactory.buildSchoolRepository();
 
-            // if(schoolRepository.hasId())
+            // if(!schoolRepository.hasId())
             // {
-            //     return new BadRequestObjectResult("");
+            //     return new UnprocessableEntityResult(); /422
             // }
 
             dynamic content = await new StreamReader(request.Body).ReadToEndAsync();

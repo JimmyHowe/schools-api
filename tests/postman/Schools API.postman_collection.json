@@ -11,12 +11,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:7071/api/schools",
-					"protocol": "http",
+					"raw": "{{host}}/api/schools",
 					"host": [
-						"localhost"
+						"{{host}}"
 					],
-					"port": "7071",
 					"path": [
 						"api",
 						"schools"
@@ -40,12 +38,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:7071/api/schools/create",
-					"protocol": "http",
+					"raw": "{{host}}/api/schools/create",
 					"host": [
-						"localhost"
+						"{{host}}"
 					],
-					"port": "7071",
 					"path": [
 						"api",
 						"schools",
@@ -61,12 +57,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:7071/api/schools/secondary-school-cleveden-school",
-					"protocol": "http",
+					"raw": "{{host}}/api/schools/secondary-school-cleveden-school",
 					"host": [
-						"localhost"
+						"{{host}}"
 					],
-					"port": "7071",
 					"path": [
 						"api",
 						"schools",
@@ -91,12 +85,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:7071/api/schools/secondary-school-cleveden-school",
-					"protocol": "http",
+					"raw": "{{host}}/api/schools/secondary-school-cleveden-school",
 					"host": [
-						"localhost"
+						"{{host}}"
 					],
-					"port": "7071",
 					"path": [
 						"api",
 						"schools",
@@ -116,12 +108,10 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:7071/api/schools/secondary-school-cleveden-school",
-					"protocol": "http",
+					"raw": "{{host}}/api/schools/secondary-school-cleveden-school",
 					"host": [
-						"localhost"
+						"{{host}}"
 					],
-					"port": "7071",
 					"path": [
 						"api",
 						"schools",

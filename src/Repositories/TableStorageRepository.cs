@@ -1,3 +1,4 @@
+using System;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Auth;
 using Microsoft.WindowsAzure.Storage.Table;
@@ -19,7 +20,7 @@ namespace SkillsDevelopmentScotland.Functions.Schools
                     false
                 );
             this.client = account.CreateCloudTableClient();
-            this.table = client.GetTableReference("schools");
+            this.table = client.GetTableReference(Environment.GetEnvironmentVariable("SCHOOLS_TABLE_NAME"));
         }
     }
 }
